@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
     internal class DropSupport
 

@@ -2,14 +2,14 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using PointBuilder.Export;
-using PointBuilder.Dialogs;
+using PointBuilderApp.Export;
+using PointBuilderApp.Dialogs;
 using System.Collections.Generic;
 using System.Windows.Data;
 using System;
 using static System.Environment;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
 
     /// <summary>
@@ -17,7 +17,7 @@ namespace PointBuilder
     /// </summary>
     public partial class MainWindow : Window
     {
-        Builder builder;
+        PointBuilder builder;
         ListCollectionView inputView;
 
         public MainWindow()

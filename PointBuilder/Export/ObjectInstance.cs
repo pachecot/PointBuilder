@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
-namespace PointBuilder.Export
+namespace PointBuilderApp.Export
 {
     public class ObjectInstance : INotifyPropertyChanged
     {

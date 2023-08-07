@@ -1,10 +1,10 @@
-﻿using PointBuilder.XmlHelper;
+﻿using PointBuilderApp.XmlHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace PointBuilder.XmlHelper
+namespace PointBuilderApp.XmlHelper
 {
     public class ObjectSet
     {

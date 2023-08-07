@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Windows;
 
-namespace PointBuilder.Dialogs
+namespace PointBuilderApp.Dialogs
 {
     internal class CommonDialogs
     {

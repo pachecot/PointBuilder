@@ -1,5 +1,5 @@
-﻿using PointBuilder.Export;
-using PointBuilder.XmlHelper;
+﻿using PointBuilderApp.Export;
+using PointBuilderApp.XmlHelper;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
     internal class ExportLibrary
     {

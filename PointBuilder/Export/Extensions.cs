@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace PointBuilder.Export
+namespace PointBuilderApp.Export
 {
 
     public static class ObservableCollectionOfPointExtensions

@@ -1,5 +1,5 @@
-﻿using PointBuilder.XmlHelper;
-using PointBuilder.Export;
+﻿using PointBuilderApp.XmlHelper;
+using PointBuilderApp.Export;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
 
     /// <summary>

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
     internal class DragSupport
     {

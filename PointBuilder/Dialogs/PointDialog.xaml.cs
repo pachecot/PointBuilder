@@ -1,9 +1,9 @@
-﻿using PointBuilder.Export;
+﻿using PointBuilderApp.Export;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
     /// <summary>
     /// Interaction logic for PointDialog.xaml

@@ -1,5 +1,5 @@
-﻿using PointBuilder.Export;
-using PointBuilder.XmlHelper;
+﻿using PointBuilderApp.Export;
+using PointBuilderApp.XmlHelper;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -7,9 +7,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace PointBuilder
+namespace PointBuilderApp
 {
-    internal class Builder
+    internal class PointBuilder
     {
         ExportLibrary library = new();
         Dictionary<string, XElement> typeMap = new();
@@ -21,7 +21,7 @@ namespace PointBuilder
         {
             get => currrentFile;
         }
-        public Builder()
+        public PointBuilder()
         {
             LoadLibraryTypes();
         }

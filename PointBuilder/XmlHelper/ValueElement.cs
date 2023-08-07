@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 
-namespace PointBuilder.XmlHelper
+namespace PointBuilderApp.XmlHelper
 {
     class ValueElement
     {
