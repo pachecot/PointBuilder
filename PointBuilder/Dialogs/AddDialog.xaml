@@ -1,0 +1,98 @@
+﻿<Window x:Class="PointBuilder.AddDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointBuilder"
+        mc:Ignorable="d"
+        Title="AddDialog" 
+        Height="450" 
+        Width="350" 
+        WindowStyle="ToolWindow" 
+        ResizeMode="NoResize" 
+        ShowInTaskbar="False" 
+        Topmost="True" 
+        SizeToContent="WidthAndHeight" 
+        WindowStartupLocation="CenterOwner">
+    <Window.CommandBindings>
+        <CommandBinding 
+            Command="ApplicationCommands.Paste"
+            Executed="PasteExecuted" />
+    </Window.CommandBindings>
+    <Grid 
+        Margin="15"
+        >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="23*" />
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <TextBlock 
+            x:Name="textBlock" 
+            Grid.Row="0"  
+            Grid.Column="0">
+            Number of items:
+        </TextBlock>
+        <TextBox  
+            x:Name="NumberOfItems" 
+            Grid.Row="0" 
+            Grid.Column="1" 
+            Text="1" 
+            TextChanged="NumberOfItems_TextChanged" 
+            InputScope="Digits" 
+            AutomationProperties.LabeledBy="{Binding ElementName=textBlock, Mode=OneWay}" />
+        <ListBox 
+            x:Name="NewItems" 
+            Grid.Row="2" 
+            Grid.ColumnSpan="2" 
+            VerticalAlignment="Stretch" 
+            Grid.RowSpan="2" 
+            MaxHeight="300"
+            >
+            <ListBox.ItemTemplate>
+                <DataTemplate >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                        <TextBox 
+                        Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                        IsTabStop="True" 
+                        HorizontalAlignment="Stretch"
+                        MaxWidth="300"
+                        BorderThickness="0"
+                        />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel 
+            Grid.ColumnSpan="2" 
+            Grid.Row="4" 
+            Orientation="Horizontal" 
+            HorizontalAlignment="Right" 
+            Margin="0,0,0,0"
+            >
+            <Button 
+                x:Name="CancelButton"  
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center" 
+                Width="100"
+                >
+                Cancel
+            </Button>
+            <Button 
+                x:Name="OkButton" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center" 
+                Width="100"
+                Margin="5,0,5,0"
+                >
+                OK
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
